@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTAL DE NOTICIAIS GALATICA</title>
-    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylessheet" href="styles/cards.css">
+    <script src="src/components/cardnews.js" defer></script>
+    <script src="src/components/TituloDinamico.js" defer></script>
 </head>
+
 <body>
-    <DIV class="CONTAINER"></DIV>
-    <div class="card">
-        <div class="card__left">
-            <span>Ricardo</span>
-            <h2>Darth Vader Contrata Devs</h2>
-            <p>Darth Vader procura desenvolvedores que sabem trabalhar com componentes</p>
-            <img src="assets/asset-vader.png" alt="" srcset="">
+    <div class="container">
 
-        </div>
-        <div>
-            <div class="card__right">
-        </div>
-      
+        <div class="card">
+            <div class="card__left">
+                <span> By Ricardo Ferreira</span>
+                <a href="#">Darth Vader Contrata Devs </a>
+                <p>Darth Vader procura desenvolvedores que sabem trabalhar com componentes.</p>
+            </div>
+            <div>
+                <div class="card__right">
+                    <img src="assets/asset-vader.png" alt="" srcset="">
+                </div>
 
-    </div>
+
+            </div>
+            <card-news></card-news>
+            <titulo-dinamico titulo="Noticia Urgente"></titulo-dinamico>
 </body>
+
 </html>
